@@ -45,12 +45,12 @@
 				type: String,
 				required: false,
 			},
-			
+
 			reference: {
 				type: String,
 				required: false
 			},
-			
+
 			type: {
 				type: String,
 				required: false,
@@ -112,7 +112,7 @@
 		mounted: function() {
 			if (typeof grecaptcha === 'undefined') {
 				var script = document.createElement('script');
-				script.src = 'https://www.google.com/recaptcha/api.js?render=explicit';
+				script.src = 'https://www.recaptcha.net/recaptcha/api.js?render=explicit';
 				script.onload = this.renderWait;
 
 				document.head.appendChild(script);
