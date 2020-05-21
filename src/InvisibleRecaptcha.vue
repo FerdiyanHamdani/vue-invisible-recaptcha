@@ -113,6 +113,7 @@
 			if (typeof grecaptcha === 'undefined') {
 				var script = document.createElement('script');
 				script.src = 'https://www.recaptcha.net/recaptcha/api.js?render=explicit';
+				script.defer = true;
 				script.onload = this.renderWait;
 
 				document.head.appendChild(script);
